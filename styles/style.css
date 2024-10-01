@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    /*Para colocar no centro da tela(horizontal)*/
+    align-items: start;
+    /*Para colocar no topo da tela(vertical)*/
+    height: 100vh;
+
+}
+
+.container {
+    background-color: #f9f9f9;
+    margin: 30px;
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 11px 10px 14px 8px rgba(0, 0, 0, 0.55);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Merriweather, serif;
+}
+
+.container .grupo-input {
+    display: flex;
+    flex-direction: row;
+}
+
+#tarefa {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    outline: none;
+}
+
+#add-tarefa {
+    margin-left: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: honeydew;
+    color: black;
+    cursor: pointer;
+}
+
+#add-tarefa:hover {
+    background-color: rgb(161, 161, 161);
+}
+
+#lista-tarefa {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#lista-tarefa li {
+    background-color: #ecebeb;
+    border: 1px solid #dddddd;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.check, .delete, .edit {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.check {
+    color: #0ee60e;
+}
+
+.edit {
+    color: #007bff;
+}
+
+.delete {
+    color: #dc3545;
+}
+
+.completed {
+    background-color: #dcedc8 !important;
+}
