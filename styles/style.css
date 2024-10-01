@@ -34,7 +34,15 @@ body {
 .container .grupo-input {
     display: flex;
     flex-direction: row;
+    column-gap: 10px;
 }
+    @media (max-width: 420px){
+        .container .grupo-input{
+            flex-direction: column;
+            row-gap: 10px;
+            
+        }
+    }
 
 #tarefa {
     flex: 1;
@@ -45,8 +53,7 @@ body {
 }
 
 #add-tarefa {
-    margin-left: 10px;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px 20px;
     background-color: honeydew;
     color: black;
