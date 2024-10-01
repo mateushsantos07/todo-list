@@ -35,19 +35,22 @@ function render() {
         const span = document.createElement("span")
         span.textContent = tarefas[i].text;
 
-        const concluir = document.createElement("button")
-        concluir.textContent = tarefas[i].completed ? "Desmarcar" : "Concluir";
+        const concluir = document.createElement("span")
+        concluir.textContent = "task"
         concluir.classList.add("check");
+        concluir.classList.add("material-symbols-outlined")
         concluir.setAttribute("onclick", `trocaConcluir(${tarefas[i].id})`);
 
-        const editar = document.createElement("button")
-        editar.textContent = "Editar"
+        const editar = document.createElement("span")
+        editar.textContent = "edit_note"
+        editar.classList.add("material-symbols-outlined")
         editar.classList.add("edit");
         editar.setAttribute("onclick", `editarTarefa(${tarefas[i].id})`)
 
-        const deletar = document.createElement("button")
-        deletar.textContent = "Deletar"
+        const deletar = document.createElement("span")
+        deletar.textContent = "Delete"
         deletar.classList.add("delete");
+        deletar.classList.add("material-symbols-outlined")
         deletar.setAttribute("onclick", `deletarTarefa(${tarefas[i].id})`)
 
         const div = document.createElement("div")
